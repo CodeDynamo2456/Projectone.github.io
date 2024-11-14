@@ -1,0 +1,39 @@
+#indicators3,#indicators2,#indicators1{
+    height: 15px;
+    width: 15px;
+    margin-bottom: -50px;
+}
+.main_heading{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 55px;
+}
+.btn_pr{
+    font-size: 18px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+li{
+
+list-style-type: square;
+/* list-style-type: ; */
+}
+.underline{
+    width: 90px;
+    height: 6px;
+    background-color: black;
+    border-radius: 10px;
+
+}
+#in1,#in2,#in3{
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    border: 2px solid rgb(24, 211, 139);
+    padding: 2px;
+    margin-bottom:-9px;
+}
+.card{
+    border: none;
+}

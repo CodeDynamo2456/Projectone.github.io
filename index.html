@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="./css/style.css">
+    <title>Hello, world!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+        .main_head{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            margin-top: 50px;
+        }
+
+          
+    /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    } */
+    /* body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      min-height: 100vh;
+    } */
+    .list {
+      position: relative;
+    }
+    .list h2 {
+      color: #0a0a0a;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .list ul {
+      position: relative;
+    }
+    .list ul li {
+      position: relative;
+      left: 0;
+      color: #050505;
+      list-style: none;
+      margin: 4px 0;
+      border-left: 2px solid #0C0C4B;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .list ul li:hover {
+      left: 10px;
+    }
+    .list ul li span {
+      position: relative;
+      padding: 8px;
+      padding-left: 12px;
+      display: inline-block;
+      z-index: 1;
+      transition: 0.5s;
+    }
+    .list ul li:hover span {
+      color: #fdfcfc;
+    }
+    .list ul li:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #0C0C4B;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.5s;
+    }
+    .list ul li:hover:before {
+      transform: scaleX(1);
+    }
+    .card{
+      border-radius: 0px;
+    }
+
+
+
+/* list 2 */
+
+.list1 {
+      position: relative;
+    }
+    .list1 h2 {
+      color: #0a0a0a;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .list1 ul {
+      position: relative;
+    }
+    .list1 ul li {
+      position: relative;
+      left: 0;
+      color: #050505;
+      list-style: none;
+      margin: 4px 0;
+      border-left: 2px solid #fcfcff;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .list1 ul li:hover {
+      left: 10px;
+    }
+    .list1 ul li span {
+      position: relative;
+      padding: 8px;
+      padding-left: 12px;
+      display: inline-block;
+      z-index: 1;
+      transition: 0.5s;
+    }
+    .list1 ul li:hover span {
+      color: #0a0a0a;
+    }
+    .list1 ul li:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #f9f9fa;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.5s;
+    }
+    .list1 ul li:hover:before {
+      transform: scaleX(1);
+    }
+    .card{
+      border-radius: 0px;
+    }
+
+
+    
+        </style>
+</head>
+
+<body>
+
+<div style="background-color: #0C0C4B;">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg " style="background-color: #0C0C4B;color: white;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./image/logo_click.png" alt="" class="img-fluid" height="50px" width="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">ClickFolio</a>
+                  </li>
+                  <li class="nav-item"></li>
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">AboutUS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./html/service.html">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./html/contactus.html">Contact US</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+</div>
+
+
+
+
+<!-- header start -->
+
+
+<section style="background-color: #0C0C4B;">
+
+<div class="container " >
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" id="indicators1" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" id="indicators2" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" id="indicators3" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="row">
+                <div class="col-md-6 text-white">
+                  <h1 class="main_head">
+                    A PORTFOLIO IS A <br> COLLECTION OF <br> RECORDS THAT <br> REFLECT YOUR SKILLS <br> & EXPERIENCES.
+                  </h1>
+                </div>
+                <div class="col-md-6">
+                    <img src="./image/img1.png" class="d-block" alt="...">
+                </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-6 text-white">
+                    <h1 class="main_head">
+                        A PORTFOLIO IS A <br> COLLECTION OF RECORDS <br> THAT REFLECT YOUR <br> SKILLS & EXPERIENCES.
+                      </h1>
+                </div>
+                <div class="col-md-6">
+                    <img src="./image/img2.png" class="d-block" alt="...">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-6 text-white">
+                    <h1 class="main_head">
+                        A PORTFOLIO IS A <br> COLLECTION OF RECORDS <br> THAT REFLECT YOUR <br> SKILLS & EXPERIENCES.
+                      </h1>
+                </div>
+                <div class="col-md-6">
+                    <img src="./image/img3.png" class="d-block" alt="...">
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#0C0C4B" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,144C672,149,768,203,864,202.7C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+  </svg>
+
+ <!-- header end -->
+
+
+<!-- About section -->
+
+<div class="container">
+  <h2 class="h2 text-center"> <b> WHY PORTFOLIO</b></h2>
+  <div>
+    <div class="underline m-auto"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="container">
+        <img src="./image/solution.jpg" alt="fnhf" class="img-fluid pt-4">    
+      </div>
+    </div>
+    <div class="col-md-6">
+      
+      <div class="list pt-4">
+        <h2 class="h3 text-center">Build the site you want.Get the work you want</h2>
+        <ul class="pt-4">
+          <li ><span>Lorem ipsum dolor sit amet</span></li>
+          <li><span>Consectetur adipisicing elit</span></li>
+          <li><span>Ut labore et dolore magna aliqua</span></li>
+          <li><span>Ut enim ad minim veniam</span></li>
+          <li><span>Quis nostrud exercitation ullamco</span></li>
+          <li><span>Laboris nisi ut aliquip ex</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- end  -->
+
+ <div class="container mt-3" >
+  <h2 class="h2 text-center"> <b> What We Do</b></h2>
+  <div>
+    <div class="underline m-auto"></div>
+  </div>
+  <div class="row text-center mt-5 mb-5">
+    <div class="col-md-4">
+      <div class="card p-4" style="border: 0px;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;">
+        <img src="./image/card1.png" class="m-auto" alt="..." height="80px" width="80px">
+        <div class="card-body" >
+          <h5 class="card-title">Personal Website</h5>
+          <p class="card-text">Personal Website is world wide web page, which can help to you for Exploring your skills , Knowledge , Experience and experties. It also allows more freedom in types and quantity of content than a social network profile offers and can link various social media profiles with each other.</p>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"><div class="card p-4" style="border: 0px;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;" >
+      <img src="./image/card2.png" class="m-auto" alt="..." height="80px" width="80px">
+      <div class="card-body">
+        <h5 class="card-title">Upgrading Skills</h5>
+        <p class="card-text">Understanding ourselves and moderating our responses talking effectively and empathizing accurately building relationships of trust, respect and interactions. An ability and capacity acquired through deliberate, systematic to smoothly and adaptively carry out complex activities.</p>
+    
+      </div>
+    </div></div>
+    <div class="col-md-4">
+      <div class="card p-4" style="border: 0px;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;" >
+        <img src="./image/card3.png" class="m-auto" alt="..." height="80px" width="80px">
+        <div class="card-body">
+          <h5 class="card-title">Digital System</h5>
+          <p class="card-text">Digital system consist the process of sharing the information of you skills and knowledge by a url links. Digital means anybody can contact you from anywhere,anytime. This is a simplest way to communicate among all the communication process.it helps to make a better relation with online.</p>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <img src="./image/3rd.png" class="w-100" alt="" style="height:250px ;margin-top: -250px;">
+</div>
+
+<div style="background-color: #0C0C4B;;color: white;margin-top: -20px;">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="list1 pt-5">
+        <h2 class="h3 text-center text-white">How Does It Works</h2>
+        <ul class="pt-4">
+          <li class="text-white"><span>Increasing a chance to get job.</span></li>
+          <li class="text-white"><span>Reducing Their time to create a personal website.</span></li>
+          <li class="text-white"><span>Providing a good Portfolio according their need.</span></li>
+          <li class="text-white"><span>Making a digital system of their skills.</span></li>
+          <li class="text-white"><span>Quis nostrud exercitation ullamco</span></li>
+          <li class="text-white"><span>Help to share their portfolio to anyone , anywhere and anytime</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="container"></div>
+        <img src="./image/rightimg.png" alt="fnhf" class="img-fluid pt-4 mt-5">    
+      </div>
+    </div>
+ 
+</div>
+</div>
+
+<!-- Second card -->
+
+<div class="container mt-3 mb-5" >
+  <h2 class="h2 text-center"> <b> What We Do</b></h2>
+  <div>
+    <div class="underline m-auto"></div>
+  </div>
+  <div class="row text-center mt-5 mb-5">
+    <div class="col-md-4">
+      <div class="card p-4" style="border: 0px;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;">
+        <img src="./image/cad1.png" class="m-auto" alt="..." height="200px" width="250px">
+        <div class="card-body" >
+          <h5 class="card-title"><b>Job Portfolio</b></h5>
+          <p class="card-text">Personal Website is world wide web page, which can help to you for Exploring your skills , Knowledge , Experience and experties. It also allows more freedom in types and quantity of content than a social network profile offers and can link various social media profiles with each other.</p>
+          <a href="#" class="btn btn-primary" style="background-color: black;color: #f9f9fa;">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"><div class="card p-4" style="border: 0px;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;" >
+      <img src="./image/cad2.png" class="m-auto" alt="..." height="200px" width="250px">
+      <div class="card-body">
+        <h5 class="card-title"><b>Digital Access</b></h5>
+        <p class="card-text">Digital Access is the url/links, which gives an idea about your skills, Work, Project, Experience.It might be your LinkedIn Profile, Behance Profile, YouTube Channel URL, SoundCloud URL or your Website. Portfolio URL is every URL which gives an idea about your skills, Work, Project, Experience.</p>
+        <a href="#" class="btn btn" style="background-color: black;color: #f9f9fa;">Go somewhere</a>
+      </div>
+    </div></div>
+    <div class="col-md-4">
+      <div class="card p-4" style="border: 0px;box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;" >
+        <img src="./image/cad3.png" class="m-auto" alt="..." height="200px" width="250px">
+        <div class="card-body">
+          <h5 class="card-title">Impression</h5>
+          <p class="card-text">In your portfolio should include meaningful and attention-grabbing content. For instance, you can add recent updates, experience, future goals, achievements. Ideally, you should link samples of your work in your own Portfolio.It helps you connect with clients and build your.</p>
+          <a href="#" class="btn btn-primary" style="background-color: black;color: #f9f9fa;">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Galary -->
+<div class="container mt-5">
+  <h2 class="h2 text-center"> <b>OUR SERVICES</b></h2>
+  <div>
+    <div class="underline m-auto"></div>
+  </div>
+  <div class="row pt-4">
+    <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  <div class="col-md-6 col-lg-4 col-sm-6">
+    <figure class="figure">
+      <img src="./image/galary.jpg" class="img-fluid" alt="">
+    </figure>
+  </div>
+  </div>
+
+</div>
+
+
+
+
+
+<!-- testimonial -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" id="in1" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" id="in2" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" id="in3" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="container-fluid mb-5 " style="background-color: #0C0C4B;color: white;">
+    <div class="container p-4">
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
+         
+          <div class="card text-center p-3" style="background-color: #0C0C4B;color: white;">
+            <img src="./image/Rahul.jpeg" class="img-fluid m-auto" alt="" height="200px" width="150px" style="border-radius: 50%;border: 2px solid rgb(247, 245, 245);">
+            <div class="card-body">
+              <h5 class="card-title">Rahul vsk</h5>
+              <p class="card-text">"Rahul Vsk is a Professonal Software Engineer.He has <br> Experience of 5 years.He has Excellent Knowledge of Software Field as Frontend And backend Technologies in <br>industries level."</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    
+    
+        </div>
+        <div class="carousel-item">
+          
+    
+          <div class="card text-center p-3" style="background-color: #0C0C4B;color: white;">
+            <img src="./image/Rahul.jpeg" class="img-fluid m-auto" alt="" height="200px" width="150px" style="border-radius: 50%;border: 2px solid rgb(247, 245, 245);">
+            <div class="card-body">
+              <h5 class="card-title">Rahul vsk</h5>
+              <p class="card-text">"Rahul Vsk is a Professonal Software Engineer.He has <br> Experience of 5 years.He has Excellent Knowledge of Software Field as Frontend And backend Technologies in <br>industries level."</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          
+          <div class="card text-center p-3" style="background-color: #0C0C4B;color: white;">
+            <img src="./image/Rahul.jpeg" class="img-fluid m-auto" alt="" height="200px" width="150px" style="border-radius: 50%;border: 2px solid rgb(247, 245, 245);">
+            <div class="card-body">
+              <h5 class="card-title">Rahul vsk</h5>
+              <p class="card-text">"Rahul Vsk is a Professonal Software Engineer.He has <br> Experience of 5 years.He has Excellent Knowledge of Software Field as Frontend And backend Technologies in <br>industries level."</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<!-- Form -->
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="container">
+        <img src="./image/form_img.png" class="img-fluid" alt="">
+      </div>
+    </div>
+    <div class="col-md-6" style="background-color: #0C0C4B; color: white;">
+<div class="container">
+  <form>
+<div class="text-center">
+  <h3 class="h2 m-auto pt-5">GET IN TOUCH</h3>
+</div>
+    <div class="mb-3 pt-5">
+      <label for="exampleInputEmail1" class="form-label">Name:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <label for="exampleInputEmail1" class="form-label">Address:</label>
+    <div class="form-floating">
+      
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+      <label for="floatingTextarea2">Comments</label>
+    </div>
+  <div class="text-center">
+    <button type="submit" class="btn m-auto mt-4" style="border-radius: 0px;padding: 10px;background-color: black;color: white;padding-left: 20px;padding-right: 20px;font-weight: bold;">Submit</button>
+  </div>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- footer -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+	<path fill="#0C0C4B" fill-opacity="1" d="M0,128L60,106.7C120,85,240,43,360,64C480,85,600,171,720,181.3C840,192,960,128,1080,117.3C1200,107,1320,149,1380,170.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+  </svg>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color: #0C0C4B;color: white;margin-top:-50px">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container mt-5">
+	<div class="container ss">
+		<h1 class="text-center mt-4" id="aa">OUR DESIGN</h1>
+		<div align="center">
+			<div class="under_line" style="width:150px !important; background-color:black;"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-lg-4 col-sm-6">
+			  <figure class="figure">
+				<img src="./image/cad3.png" class="img-fluid galary_image">
+			  </figure>	
+			</div>
+			<div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+			  <div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+			  <div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+			  <div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+
+			  <div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+			  <div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+			  <div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+			  <div class="col-md-6 col-lg-4 col-sm-6">
+				<figure class="figure">
+				  <img src="./image/cad3.png" class="img-fluid galary_image">
+				</figure>	
+			  </div>
+		</div>
+	</div>
+</div> -->
+
+
+<!-- <img src="./image/3rd.png" class="w-100" alt="" style="margin-top: -250px;height: 200px;"> -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
